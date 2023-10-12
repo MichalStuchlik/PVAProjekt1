@@ -6,15 +6,46 @@
     box-sizing: border-box;
 }
 
+h2, h1, p {
+    max-width: 500px;
+    margin: auto;
 
+}
 body {
+
     font-family: 'Young Serif', serif;
+    background-image: url("https://media.istockphoto.com/id/959604522/cs/fotografie/%C5%BEena-pije-vodu-po-b%C4%9Bhu.jpg?s=2048x2048&w=is&k=20&c=suklY3BnSc-pjdOJgfrbu7vjQnviiJmJgj56D-7QhDs=");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+button {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    position: absolute;
+    top: 200px;
+    left: 650px;
+    max-width: 500px;
+}
+
+
+
+button:hover {
+    background-color: red;
 }
 
 #logo {
     font-weight: bold;
     font-size: 2rem;
-    
+
 }
 
 .text-primary {
@@ -46,8 +77,8 @@ body {
     margin: 0 0.25;
 }
 
-#navbar ul li a:hover{
+#navbar ul li a:hover {
     background-color: white;
     border-radius: 5px;
-    color:black;
+    color: black;
 }
