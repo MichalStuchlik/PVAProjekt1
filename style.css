@@ -1,71 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Young+Serif&display=swap');
 
+
+@import url('https://fonts.googleapis.com/css?family=Pathway+Gothic+One&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-h2, h1, p {
-    max-width: 500px;
-    margin: auto;
-
-}
 body {
-
-    font-family: 'Young Serif', serif;
-    background-image: url("https://media.istockphoto.com/id/959604522/cs/fotografie/%C5%BEena-pije-vodu-po-b%C4%9Bhu.jpg?s=2048x2048&w=is&k=20&c=suklY3BnSc-pjdOJgfrbu7vjQnviiJmJgj56D-7QhDs=");
-    background-size: cover;
-    background-repeat: no-repeat;
-
+    font-family: 'Pathway Gothic One', sans-serif;
 }
-
-button {
-    background-color: black;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-    position: absolute;
-    top: 200px;
-    left: 650px;
-    max-width: 500px;
-}
-
-
-
-button:hover {
-    background-color: red;
-}
-
 #logo {
     font-weight: bold;
-    font-size: 2rem;
-
+    font-size: 2.5rem;
 }
-
 .text-primary {
-    color: white;
+    color: turquoise;
 }
-
 #navbar {
+    position: fixed;
     background-color: black;
     color: white;
     display: flex;
     justify-content: space-between;
     padding: 1rem;
     flex-wrap: wrap;
+    width: 100%;
+    
 }
-
 #navbar a {
-    color: white;
+    color:white;
     text-decoration: none;
 }
-
 #navbar ul {
     display: flex;
     list-style: none;
@@ -73,12 +38,294 @@ button:hover {
 }
 
 #navbar ul li a {
-    padding: 0.75rem;
-    margin: 0 0.25;
+    padding: 2px;
+    margin: 0 0.25rem;
+    font-size: 19px;
+}
+#navbar ul li a:hover {
+    background-color: turquoise;
+    border-radius: 2px;
+    color: black;
 }
 
-#navbar ul li a:hover {
-    background-color: white;
+@media only screen and (max-width: 700px) {
+    #navbar ul {
+        margin-top: 1rem;
+    }
+}
+#navbar a {
+    color: white;
+}
+
+#showcase {
+    background: #333 url("../img/engel.jpg") no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+}
+#showcase .showcase-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.l-heading {
+    font-size: 4rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+
+}
+
+.lead {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+
+}
+.btn {
+    display: inline-block;
+    color: white;
+    background: Black;
+    padding: 0.5rem 2rem;
+    border: none;
     border-radius: 5px;
+
+}
+.btn:hover {
+    background: turquoise;
+}
+.btn-dark {
+    background-color: #333;
+    color: white;
+}
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 1rem;
+    overflow: hidden;
+    text-align: center;
+}
+
+.text-center {
+    text-align: center;
+}
+.m-heading {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+}
+.py-1 {
+    padding: 1.5rem 0;
+}
+.py-2 {
+    padding: 2rem 0;
+}
+.py-3 {
+    padding: 3rem 0;
+}
+#what .items {
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+}
+#what .item {
+    text-align: center;
+    padding: 1rem;
+}
+#what .items .item i {
+    background: turquoise;
+    padding: 1rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+.bg-light {
+    background: rgb(128, 127, 127);
     color: black;
+}
+.bg-dark {
+    background: #333;
+    color: white;
+}
+.py-1 {
+    padding: 1.5rem;
+}
+.py-2 {
+    padding: 2rem;
+}
+.py-3 {
+    padding: 3rem;
+}
+.list {
+    margin: 0.5rem 0;
+    list-style: none;
+}
+.list li {
+    padding: 0.5rem 0;
+    border-bottom: #444 dotted 1px;
+}
+#who {
+    display: flex;
+}
+#who div {
+    flex: 1;
+}
+#who .who-img {
+    background: url("../img/120524-science-crucifixion-130p.webp") no-repeat center/cover;
+}
+
+tr:hover {
+    background-color: lightgray;
+}
+.center {
+    margin:auto;
+    width: 50%;
+    padding:1rem;
+}
+.tabula {
+    top: 100px;
+}
+#navbar1 {
+    position: static;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    flex-wrap: wrap;
+    width: 100%;
+    z-index: 3;
+}
+#navbar1 a {
+    color:white;
+    text-decoration: none;
+}
+#navbar1 ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+#navbar1 ul li a {
+    padding: 2px;
+    margin: 0 0.25rem;
+    font-size: 19px;
+}
+#navbar1 ul li a:hover {
+    background-color: yellow;
+    border-radius: 2px;
+    color: black;
+}
+
+@media only screen and (max-width: 700px) {
+    #navbar1 ul {
+        margin-top: 1rem;
+    }
+}
+#navbar1 a {
+    color: white;
+}
+.split-btn{
+    display: flex;
+    width: 30px;
+    height: 40px;
+}
+.split-btn button{
+    font-size: 1rem;
+    background-color: yellow;
+    color: #000;
+    border-style: none;
+    padding: 8px 16px;
+    border-radius: 4px 0 0 4px;
+}
+.split-btn .dropdown{
+    border-left:1px solid #ddd;
+}
+.split-btn .dropdown button{
+    height: 100%;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+}
+.split-btn .dropdown .dropdown-content{
+    position: absolute;
+    display: none;
+}
+.split-btn .dropdown:hover .dropdown-content{
+    display: block;
+    font-size: 0.8em;
+
+}
+#showcase1 {
+    background: #333 url("../img/024.Jacob_Wrestles_with_the_Angel.jpg") no-repeat center center/cover;
+    height: 200vh;
+    color: white;
+    z-index: 5;
+}
+#showcase1 .showcase-content1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+#navbar2 {
+    position: fixed;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    flex-wrap: wrap;
+    width: 100%;
+    z-index: 3;
+}
+#navbar2 a {
+    color:white;
+    text-decoration: none;
+}
+#navbar2 ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+#navbar2 ul li a {
+    padding: 2px;
+    margin: 0 0.25rem;
+    font-size: 19px;
+}
+#navbar2 ul li a:hover {
+    background-color: yellow;
+    border-radius: 2px;
+    color: black;
+}
+
+@media only screen and (max-width: 725px) {
+    #navbar2 ul {
+        margin-top: 5px;
+        font-size: 10px;
+    }
+    #logo {
+        font-size: 25px;
+    }
+    #navbar2 ul li a {
+        font-size: 15px;
+}
+}
+#navbar2 a {
+    color: white;
+}
+.knihy {
+    font-size: 4rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+    text-align: center;
+    margin-left: 170px;
+    margin-top: 100px;
+    padding: 0px 30px 0px 30px;
+}
+@media screen and (max-width: 725px) {
+    .knihy {font-size: 40px;}
+    .knihy {margin-left: 120px;}
 }
