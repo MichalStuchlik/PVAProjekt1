@@ -98,7 +98,7 @@ img {
 }
 
 #showcase {
-    background: #333 url("../img/fotka.jpg") no-repeat center center/cover;
+    background: #333 url("img/fotka.jpg") no-repeat center center/cover;
     height: 100vh;
     color: white;
 }
